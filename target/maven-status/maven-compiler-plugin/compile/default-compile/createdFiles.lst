@@ -1,0 +1,13 @@
+patch\oracle\com\patchoperation\PatchStatus.class
+patch\oracle\com\beans\PatchOperationDriver.class
+patch\oracle\com\patchoperation\PatchOp.class
+patch\oracle\com\beans\GsonExample.class
+patch\oracle\com\beans\GsonFromExample.class
+patch\oracle\com\beans\Component.class
+patch\oracle\com\patchoperation\PatchOperation.class
+patch\oracle\com\patchoperation\OHSOperation.class
+patch\oracle\com\beans\CommandBean.class
+patch\oracle\com\beans\Host.class
+patch\oracle\com\beans\PatchInputBean.class
+patch\oracle\com\beans\MwHome.class
+patch\oracle\com\beans\JsonInputBean.class

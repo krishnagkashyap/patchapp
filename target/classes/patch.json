@@ -1,0 +1,98 @@
+{
+  "patchData": [
+    {
+      "hostName": "slc08dzc.us.oracle.com",
+          "guid": "kgurupra",
+          "password": "myOra123",
+          "mwHome": {
+            "oracleComponents": [
+              {
+                "componentType": "oam",
+                "username": "weblogic",
+                "password": "welcome1",
+                "domain_home": "DOMAIN_HOME",
+                "wg_oracle_home_list": [
+                  "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG1",
+                  "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG2"
+                ],
+                "ohs_instance_home_list": [
+                  "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG1/instances/webtier_inst3030",
+                  "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG1/instances/webtier_inst3031"
+                ],
+                "patchList": [
+                  "/scratch/kameneni/patch_apply/wg/p21118593_111230_Linux-x86-64.zip",
+                  "/scratch/kameneni/patch_apply/wg/p21118593_111230_Linux-x86-64.zip"
+                ],
+                "patchOperaton": "preApply,apply,postApply"
+              },
+          {
+            "componentType": "webgate",
+            "username": "weblogic",
+            "password": "welcome1",
+            "domain_home": "DOMAIN_HOME",
+            "wg_oracle_home_list": [
+              "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG1",
+              "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG2"
+            ],
+            "ohs_instance_home_list": [
+              "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG1/instances/webtier_inst3030",
+              "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG1/instances/webtier_inst3031"
+            ],
+            "patchList": [
+              "/scratch/kameneni/patch_apply/wg/p21118593_111230_Linux-x86-64.zip",
+              "/scratch/kameneni/patch_apply/wg/p21118593_111230_Linux-x86-64.zip"
+            ],
+            "patchOperaton": "apply"
+          }
+        ]
+      }
+    },
+    {
+      "hostName": "slc03qoh.us.oracle.com",
+      "guid": "kameneni",
+      "password": "123Pandu",
+      "mwHome": {
+        "oracleComponents": [
+          {
+            "componentType": "webgate",
+            "username": "weblogic",
+            "password": "welcome1",
+            "domain_home": "DOMAIN_HOME",
+            "wg_oracle_home_list": [
+              "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG1",
+              "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG2"
+            ],
+            "ohs_instance_home_list": [
+              "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG1/instances/webtier_inst3030",
+              "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG1/instances/webtier_inst3031"
+            ],
+            "patchList": [
+              "/scratch/kameneni/patch_apply/wg/p21118593_111230_Linux-x86-64.zip",
+              "/scratch/kameneni/patch_apply/wg/p21118593_111230_Linux-x86-64.zip"
+            ],
+            "patchOperaton": "apply"
+          },
+          {
+            "componentType": "webgate",
+            "username": "weblogic",
+            "password": "welcome1",
+            "domain_home": "DOMAIN_HOME",
+            "wg_oracle_home_list": [
+              "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG1",
+              "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG2"
+            ],
+            "ohs_instance_home_list": [
+              "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG1/instances/webtier_inst3030",
+              "/scratch/kgurupra/A1/view/kgurupra_dte7464/oracle/work/FMW_WEBT_CFG1/instances/webtier_inst3031"
+            ],
+            "patchList": [
+              "/scratch/kameneni/patch_apply/wg/p21118593_111230_Linux-x86-64.zip",
+              "/scratch/kameneni/patch_apply/wg/p21118593_111230_Linux-x86-64.zip"
+            ],
+            "patchOperaton": "apply"
+          }
+        ]
+      }
+    }
+  ]
+}

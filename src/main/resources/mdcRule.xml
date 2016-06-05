@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdc-transform-rule>
+    <changes-to-include entity-path="/policy"/>
+    <changes-to-include
+            entity-path="/config/NGAMConfiguration/DeployedComponent/Agent/WebGate/Instance">
+        <replace attribute-match="/*/PrimaryServerList/*/host" value-match="(.*)">
+            <replace-with
+                    n="1">
+                ${/config/NGAMConfiguration/DeployedComponent/Server/NGAMServer/Profile/OAMServerProfile/OAMSERVER/serverhost}
+            </replace-with>
+        </replace>
+        <replace attribute-match="/*/PrimaryServerList/*/port" value-match="(.*)">
+            <replace-with
+                    n="1">
+                ${/config/NGAMConfiguration/DeployedComponent/Server/NGAMServer/AdminServer/oamproxy/Port}
+            </replace-with>
+        </replace>
+
+        <replace attribute-match="/*/UserDefinedParameters/logoutRedirectUrl"
+                 value-match="(.*)://(.*):(.*)/oam/server/logout">
+            <replace-with
+                    n="1">
+                ${/config/NGAMConfiguration/DeployedComponent/Server/NGAMServer/Profile/OAMServerProfile/OAMSERVER/serverprotocol}
+            </replace-with>
+            <replace-with
+                    n="2">
+                ${/config/NGAMConfiguration/DeployedComponent/Server/NGAMServer/Profile/OAMServerProfile/OAMSERVER/serverhost}
+            </replace-with>
+            <replace-with
+                    n="3">
+                ${/config/NGAMConfiguration/DeployedComponent/Server/NGAMServer/Profile/OAMServerProfile/OAMSERVER/serverport}
+            </replace-with>
+        </replace>
+        <replace attribute-match="/*/logoutRedirectUrl"
+                 value-match="(.*)://(.*):(.*)/oam/server/logout">
+            <replace-with
+                    n="1">
+                ${/config/NGAMConfiguration/DeployedComponent/Server/NGAMServer/Profile/OAMServerProfile/OAMSERVER/serverprotocol}
+            </replace-with>
+            <replace-with
+                    n="2">
+                ${/config/NGAMConfiguration/DeployedComponent/Server/NGAMServer/Profile/OAMServerProfile/OAMSERVER/serverhost}
+            </replace-with>
+            <replace-with
+                    n="3">
+                ${/config/NGAMConfiguration/DeployedComponent/Server/NGAMServer/Profile/OAMServerProfile/OAMSERVER/serverport}
+            </replace-with>
+        </replace>
+    </changes-to-include>
+    <changes-to-include entity-path=
+                                "/config/NGAMConfiguration/DeployedComponent/Server/NGAMServer/Profile/AuthenticationModules"/>
+    <changes-to-include entity-path=
+                                "/config/NGAMConfiguration/DeployedComponent/Server/NGAMServer/Profile/oamproxy"/>
+    <changes-to-include entity-path=
+                                "/config/NGAMConfiguration/DeployedComponent/Server/NGAMServer/Profile/Sme/SessionConfigurations"/>
+    <changes-to-include entity-path=
+                                "/config/NGAMConfiguration/DeployedComponent/Server/NGAMServer/Profile/OAMServerProfile/OAMSERVER">
+        <ignore attribute-match="/serverprotocol"/>
+        <ignore attribute-match="/serverhost"/>
+        <ignore attribute-match="/serverport"/>
+    </changes-to-include>
+    <changes-to-include entity-path="/config/NGAMConfiguration/DataCenterConfiguration/Cluster">
+        <ignore attribute-match="/DataCenterType"/>
+        <ignore attribute-match="/ClusterId"/>
+        <ignore attribute-match="/WriteEnabledFlag"/>
+    </changes-to-include>
+</mdc-transform-rule>

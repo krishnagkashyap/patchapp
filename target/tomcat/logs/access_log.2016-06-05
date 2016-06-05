@@ -1,0 +1,5 @@
+127.0.0.1 - - [05/Jun/2016:00:55:06 +0530] "GET /patchapp/rest/patchoperation/hello/ HTTP/1.1" 200 13 http-bio-8080-exec-1 153
+0:0:0:0:0:0:0:1 - - [05/Jun/2016:00:55:14 +0530] "GET /patchapp/rest/patchoperation/hello HTTP/1.1" 200 13 http-bio-8080-exec-3 9
+0:0:0:0:0:0:0:1 - - [05/Jun/2016:00:55:35 +0530] "POST /patchapp/rest/patchoperation/wddata HTTP/1.1" 404 967 http-bio-8080-exec-4 11
+0:0:0:0:0:0:0:1 - - [05/Jun/2016:00:56:36 +0530] "POST /patchapp/rest/patchoperation/wddata HTTP/1.1" 404 967 http-bio-8080-exec-6 10
+0:0:0:0:0:0:0:1 - - [05/Jun/2016:00:56:52 +0530] "POST /patchapp/rest/patchoperation/wgdata HTTP/1.1" 200 41 http-bio-8080-exec-7 18

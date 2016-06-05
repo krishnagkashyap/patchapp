@@ -1,0 +1,124 @@
+{
+  "patchData": [
+    {
+      "hostName": "slc03qoh.us.oracle.com",
+      "guid": "kameneni",
+      "password": "123Pandu",
+      "mwHome": {
+        "oracleComponents": [
+          {
+            "componentType": "webgate",
+            "username": "weblogic",
+            "password": "welcome1",
+            "domain_home": "DOMAIN_HOME",
+            "wg_oracle_home_list": [
+              "/scratch/kameneni/AUTO_WORK/mw8968/wg4237"
+            ],
+            "ohs_instance_home_list": [
+              "/scratch/kameneni/AUTO_WORK/view/kameneni_dte8424/oracle/work/FMW_WEBT_CFG1/instances/webtier_inst2667"
+            ],
+            "patchList": [
+              "/scratch/kameneni/patch_apply/wg/p21118593_111230_Linux-x86-64.zip"
+            ],
+            "patchOperation": "rollback"
+          }
+        ]
+      }
+    },
+    {
+      "hostName": "den00smm.us.oracle.com",
+      "guid": "kameneni",
+      "password": "123Pandu",
+      "mwHome": {
+        "oracleComponents": [
+          {
+            "componentType": "webgate",
+            "username": "weblogic",
+            "password": "welcome1",
+            "domain_home": "DOMAIN_HOME",
+            "wg_oracle_home_list": [
+              " /scratch/kameneni/AUTO_WORK/mw7247/wg1398"
+            ],
+            "ohs_instance_home_list": [
+              "/scratch/kameneni/AUTO_WORK/view/kameneni_dte4106/oracle/work/FMW_WEBT_CFG1/instances/webtier_inst3861"
+            ],
+            "patchList": [
+              "/scratch/kameneni/patch_apply/wg/p21118593_111230_Linux-x86-64.zip"
+            ],
+            "patchOperation": "rollback"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+{
+  "patchData": [
+    {
+      "hostName": "slc03qoh.us.oracle.com",
+      "guid": "kameneni",
+      "password": "123Pandu",
+      "mwHome": {
+        "oracleComponents": [
+          {
+            "componentType": "webgate",
+            "username": "weblogic",
+            "password": "welcome1",
+            "domain_home": "DOMAIN_HOME",
+            "wg_oracle_home_list": [
+              "/scratch/kameneni/AUTO_WORK/mw8968/wg4237"
+            ],
+            "ohs_instance_home_list": [
+              "/scratch/kameneni/AUTO_WORK/view/kameneni_dte8424/oracle/work/FMW_WEBT_CFG1/instances/webtier_inst2667"
+            ],
+            "patchList": [
+              "/scratch/kameneni/patch_apply/wg/p21118593_111230_Linux-x86-64.zip"
+            ],
+            "patchOperation": "apply"
+          }
+        ]
+      }
+    }
+  ]
+}*/
+
