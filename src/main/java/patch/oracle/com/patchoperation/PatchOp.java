@@ -104,6 +104,7 @@ public class PatchOp implements Runnable {
             reportContents.put("oracle_home", commandBean.getWg_oracle_home_list().toString());
             reportContents.put("patch_list", commandBean.getPatchList().toString());
             reportContents.put("log_location", logLoc);
+            reportContents.put("patch_operation","apply");
             commandBean.setReports(reportContents);
             System.out.println("ExitCode: " + sess.getExitStatus());
             sess.close();
